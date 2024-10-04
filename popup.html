@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <title>Generador de Contraseñas</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="generator">
+      <label class="password-wrap">
+        <input 
+          type="text" 
+          id="password" 
+          readonly 
+          placeholder="Generar una contraseña" 
+        />        
+        <a class="material-icons" id="copy">content_copy</a>
+      </label>
+      <label>
+        <span>Longitud de la Contraseña:</span>
+        <input type="number" id="length" value="16" />
+      </label>
+      <label>
+        <span>- Incluir Letras Mayúsculas:</span>
+        <input type="checkbox" id="uppercase" checked />
+      </label>
+      <label>
+        <span>- Incluir Letras Minúsculas:</span>
+        <input type="checkbox" id="lowercase" checked />
+      </label>
+      <label>
+        <span>- Incluir Números:</span>
+        <input type="checkbox" id="numbers" checked />
+      </label>
+      <label>
+        <span>- Incluir Símbolos:</span>
+        <input type="checkbox" id="symbols" checked />
+      </label>
+      <button type="button" id="generate">Generar Contraseña</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
